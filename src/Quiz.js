@@ -14,10 +14,11 @@ class Quiz extends Component {
 
         const isQuizEnd = false;
 
-        if (isQuizEnd) {
+        if (isQuizEnd == true) {
             return (<QuizEnd />)
         }
-        else {
+        
+        if (isQuizEnd == false) {
             return (
                 <QuizQuestion quiz_question={quizData.quiz_questions[0]}/>  
             )
