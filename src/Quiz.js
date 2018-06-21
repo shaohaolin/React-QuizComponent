@@ -13,16 +13,18 @@ class Quiz extends Component {
     render() {
 
         const isQuizEnd = false;
+        return (
+            { 
+                if (isQuizEnd) {
+                    <QuizEnd />
+                },
 
-        if (isQuizEnd == true) {
-            return (<QuizEnd />)
-        }
-        
-        if (isQuizEnd == false) {
-            return (
-                <QuizQuestion quiz_question={quizData.quiz_questions[0]}/>  
-            )
-        }
+                if (isQuizEnd = false) {
+                    <QuizQuestion quiz_question={quizData.quiz_questions[0]}/> 
+                }
+                
+            } 
+        )
     }
 }
 
