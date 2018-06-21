@@ -12,8 +12,8 @@ class Quiz extends Component {
 
     render() {
 
-        var isQuizEnd = true;
-        
+        const isQuizEnd = true;
+
         if (isQuizEnd) {
             return (<QuizEnd />)
         }
