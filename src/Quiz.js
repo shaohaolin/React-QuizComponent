@@ -17,9 +17,11 @@ class Quiz extends Component {
         if (isQuizEnd) {
             return (<QuizEnd />)
         }
-        return (
-            <QuizQuestion quiz_question={quizData.quiz_questions[0]}/>  
-        )
+        else {
+            return (
+                <QuizQuestion quiz_question={quizData.quiz_questions[0]}/>  
+            )
+        }
     }
 }
 
